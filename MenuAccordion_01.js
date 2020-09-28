@@ -5,6 +5,7 @@ var menuCount = foodMenus.length;
 // Data + accessibility setup
 foodMenus.each(function (index){
 	var accordionContentID = "accordion-" + index;
+	console.log(accordionContentID);
 	$(this).data('menu-id', index);
 	// Accessibility labels + controls
 	$(this).children('.foodmenus__accordion-button').attr('id', accordionContentID);
