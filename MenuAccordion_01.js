@@ -7,13 +7,13 @@ foodMenus.each(function (index){
 	var accordionContentID = "accordion-" + index;
 	$(this).data('menu-id', index);
 	// Accessibility labels + controls
-	$(this).children('.foodmenus-accordion-button').attr('id', accordionContentID);
+	$(this).children('.foodmenus__accordion-button').attr('id', accordionContentID);
 	$(this).children('.foodcontent__grid').attr('aria-labelledby', accordionContentID);
 	if (index == 0) {
-		$(this).children('.foodmenus-accordion-button').attr('aria-expanded', 'true');
-		$(this).children('.foodmenus-accordion-button').attr('aria-disabled', 'true');
+		$(this).children('.foodmenus__accordion-button').attr('aria-expanded', 'true');
+		$(this).children('.foodmenus__accordion-button').attr('aria-disabled', 'true');
 	} else {
-		$(this).children('.foodmenus-accordion-button').attr('aria-expanded', 'false');
-		$(this).children('.foodmenus-accordion-button').attr('aria-disabled', 'false');
+		$(this).children('.foodmenus__accordion-button').attr('aria-expanded', 'false');
+		$(this).children('.foodmenus__accordion-button').attr('aria-disabled', 'false');
 	}
 });
