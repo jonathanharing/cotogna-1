@@ -1,6 +1,7 @@
 // Establish variables
 var foodMenus = $('#foodmenus').children('.foodmenus-collection-item');
 var menuCount = foodMenus.length;
+console.log(menuCount);
 
 // Data + accessibility setup
 foodMenus.each(function (index){
