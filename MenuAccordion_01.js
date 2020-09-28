@@ -1,4 +1,5 @@
 // Establish variables
+alert("WTF!");
 var foodMenus = $('#foodmenus').children('.foodmenus-collection-item');
 var menuCount = foodMenus.length;
 console.log("menu count: " + menuCount);
